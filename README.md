@@ -1,16 +1,26 @@
-# weatherapp
+# ⛅ Weather App
 
-A new Flutter project.
+A Flutter app that shows live weather, hourly forecast,
+humidity, wind speed and pressure using OpenWeatherMap API.
 
-## Getting Started
+## Features
+- 🌡️ Current temperature & sky condition
+- 🕐 10-slot hourly forecast
+- 💧 Humidity, wind speed & pressure info
+- 🔄 Refresh button for live updates
 
-This project is a starting point for a Flutter application.
+## Run Locally
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Setup
+Create a `secrests.dart` file in `lib/`:
+```dart
+const openweatherAPIkey = 'YOUR_API_KEY_HERE';
+```
+Get a free API key at openweathermap.org
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech
+Flutter, Dart, OpenWeatherMap API, http, intl
